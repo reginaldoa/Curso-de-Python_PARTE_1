@@ -20,3 +20,9 @@ while reduzindo >= 2: #Dessa forma deu certo.
     print(contador,reduzindo)
     contador += 1
     reduzindo -= 1
+
+
+#Resolução do professor
+
+for p, r in enumerate(range(10 , 1 , -1)):
+    print(p,r)
