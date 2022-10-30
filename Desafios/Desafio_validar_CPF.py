@@ -45,8 +45,9 @@ digito_2 = conta2 if conta2 <= 9 else 0
 digito_2 = str(digito_2)
 
 CPF_FINAL = CPF+digito_2
+sequencia = CPF == str(CPF[0]) * len(CPF) #Dessa forma, sequencias irão ser invalidadas.
 
-if CPF_FINAL == CPF_FORMATADO:
+if CPF_FINAL == CPF_FORMATADO and not sequencia:
     print(f"O CPF: {CPF_FINAL} é Valido.")
 else:
     print(f'O CPF: {CPF_FINAL} é Inválido!')
