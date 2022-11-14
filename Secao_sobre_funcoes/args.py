@@ -3,19 +3,22 @@
 *args - (empacotamento e desempacotamentos)
 """
 
-x, y, *resto = 1,2,3,4
-print(x,y,resto)
-
-def soma(x,y):
-    return x + y
-
-print(1, 2, 3, 4, 5)
-
-
-def teste(*testando):
+def soma(*testando):
     total = 0
     for numero in testando:
-        total = total + numero
-        print(f"{total}")
+        total += numero
+    return total
 
-teste(1,2,3,4,5,6)
+somando = soma(1,2,3)
+print(somando)
+
+
+numeros = 5, 5
+
+somando2 = soma(*numeros)
+print(somando2)
+
+print(sum((10,10))) #com o sum, se torna mais fácil de somar números sem fazer uma função, como a de cima, por exemplo.
+
+
+print(sum(numeros))
