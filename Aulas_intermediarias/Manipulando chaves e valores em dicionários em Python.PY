@@ -31,4 +31,3 @@ if time.get('chave2', None) is None:
 else:
     print(time[chave2])
 
-
