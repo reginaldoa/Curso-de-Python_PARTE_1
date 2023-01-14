@@ -14,7 +14,7 @@ def generator( n= 0 , maximun = 10):
 
         
 
-gen = generator(maximun= 10000000)
+gen = generator(maximun= 1000)
 
 for n in gen:
     print(n)
