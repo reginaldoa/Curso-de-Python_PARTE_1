@@ -13,10 +13,25 @@ except Exception:
 
 print('CONTINUA')
 
+
+#testes
 try:
-    print(teste)
+    print(8/0)
 except NameError:
-    print("ENTENDI")
+    print("NameError")
+except ZeroDivisionError as error: #Dessa forma, consigo nomear o erro, como se fosse uma variável.
+    print("erro: ",  error)        #Dessa forma, consigo nomear o erro, como se fosse uma variável.
+
+string = "Reginaldo"
+print(isinstance(string, str))
 
 #Exceções são erros. Em python, exceções são classes.
 #Podemos pegar o nome do erro e tratar ele em especifico.
+
+
+#Outro teste
+
+try:
+    print(eu)
+except NameError:
+    print("Nao tem essa variavel")
