@@ -17,3 +17,8 @@ print(soma(1,2))
 print(variavel)
 print(teste)
 
+
+from aula99_package.modulo import soma, fala_oi
+
+print(__name__)
+
