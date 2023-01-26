@@ -22,3 +22,5 @@ from aula99_package.modulo import soma, fala_oi
 
 print(__name__)
 
+#print(aula99_package.somando(2,2))
+print(fala_oi())
