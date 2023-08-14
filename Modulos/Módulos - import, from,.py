@@ -32,7 +32,7 @@ print(s.platform)
 
 from sys import platform as pf
 from  sys import exit as ex
-
+200
 # Má prática - from nome_módulo *
 #Vantagens : importa tudo de um módulo
 #Desvantagens : importa tudo de um módulo, corre o risco de sobreescrever com variáveis, afinal, não estou vendo os nomes.
